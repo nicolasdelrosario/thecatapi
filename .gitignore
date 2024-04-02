@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Secrets (API key)
-src/js/secrets.js
+**/secrets
