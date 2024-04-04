@@ -1,10 +1,11 @@
 import API from './api'
 
-export async function getBreedCats() {
+export async function getBreedCats(page = 1) {
 	const { data } = await API.get('/images/search', {
 		params: {
 			has_breeds: 1,
-			limit: 5,
+			limit: 3,
+			page: 1,
 		},
 	})
 	return data

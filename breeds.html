@@ -9,13 +9,11 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="./src/css/styles.css" />
 	</head>
-	<body class="bg-pale-yellow">
-		<header class="h-16 bg-amber sticky top-0">
-			<nav
-				class="flex max-w-5xl h-full mx-auto items-center justify-around border-b-2 border-coral"
-			>
-				<a href="#" class="flex items-center gap-x-3.5">
-					<img src="assets/icons/icon-cat-food.svg" alt="Logo" />
+	<body>
+		<header class="h-16 bg-amber sticky top-0 border-b-2 border-coral">
+			<nav class="flex max-w-5xl h-full mx-auto items-center justify-around">
+				<a href="index.html" class="flex items-center gap-x-3.5">
+					<img src="assets/icons/icon-cat-food.svg" alt="" />
 					<span class="text-lg text-charcoal">The Cat API</span>
 				</a>
 				<ul class="flex gap-x-3.5">
@@ -42,20 +40,22 @@
 			</nav>
 		</header>
 		<main class="min-h-screen_130 flex">
-			<section class="flex items-center max-w-5xl mx-auto">
-				<div class="px-8">
-					<h1 class="text-6xl text-dark-slate mb-5">
-						Find out all about all cats!
-					</h1>
-					<p class="text-2xl text-charcoal">A system based on TheCatAPI.</p>
-					<a
-						class="inline-flex bg-coral mt-7 px-4 py-3 text-dark-slate text-lg"
-						href="breeds.html"
-						>Start browsing now</a
-					>
-				</div>
-				<div>
-					<img src="assets/img/cat.svg" alt="Cat" />
+			<section class="w-screen max-w-5xl mx-auto mt-8 p-6">
+				<h1 class="text-6xl text-dark-slate text-center mb-12">Breeds Cats</h1>
+
+				<div id="breedCats" class="grid grid-cols-3 gap-x-6"></div>
+
+				<div class="flex justify-center px-2 py-6 gap-x-4">
+					<img
+						class="cursor-pointer"
+						src="assets/icons/icon-left-arrow.svg"
+						alt="Left Arrow"
+					/>
+					<img
+						class="cursor-pointer"
+						src="assets/icons/icon-right-arrow.svg"
+						alt="Right Arrow"
+					/>
 				</div>
 			</section>
 		</main>
@@ -83,5 +83,7 @@
 				</a>
 			</div>
 		</footer>
+
+		<script type="module" src="src/js/main.js"></script>
 	</body>
 </html>
