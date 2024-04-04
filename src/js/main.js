@@ -1,3 +1,5 @@
-import { displayBreedCats } from './features'
+import { displayBreedCats, displayFavoriteCats } from './features'
 
 displayBreedCats()
+
+displayFavoriteCats()
