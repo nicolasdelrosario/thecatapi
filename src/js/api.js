@@ -1,5 +1,5 @@
 import axios from 'axios'
-import API_KEY from './secrets'
+import API_KEY from './env'
 
 const API = axios.create({
 	baseURL: 'https://api.thecatapi.com/v1',

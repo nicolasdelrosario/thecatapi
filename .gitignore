@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Secrets (API key)
-**/secrets
+/src/js/env.js
